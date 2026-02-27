@@ -1,0 +1,1 @@
+# ulauncher-browser-history-search
