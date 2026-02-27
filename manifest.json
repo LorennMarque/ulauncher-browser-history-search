@@ -1,0 +1,44 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "Browser History Search",
+  "description": "Search your Chrome browser history directly from ULauncher—find visited websites, most visited pages, and more. Results are synced with your actual browser history, so you get the same sites you’d see when searching in the browser.",
+  "developer_name": "LorennMarque",
+  "icon": "images/icon.png",
+  "preferences": [
+    {
+      "id": "cache_path",
+      "type": "input",
+      "name": "Cache file path",
+      "description": "Where to store the history cache (JSON). Run the extension with 'load' to build it.",
+      "default_value": "~/.cache/ulauncher-browser-history/cache.json"
+    },
+    {
+      "id": "chrome_history",
+      "type": "input",
+      "name": "Chrome History file",
+      "description": "Path to Chrome's History database.",
+      "default_value": "~/.config/google-chrome/Default/History"
+    },
+    {
+      "id": "blacklist",
+      "type": "text",
+      "name": "Blacklist",
+      "description": "Domains or words to hide from results (one per line). Example: facebook.com, youtube.com",
+      "default_value": ""
+    },
+    {
+      "id": "max_results",
+      "type": "input",
+      "name": "Max suggestions",
+      "description": "Maximum number of sites to show (e.g. 12).",
+      "default_value": "12"
+    },
+    {
+      "id": "keyword",
+      "type": "keyword",
+      "name": "Keyword",
+      "description": "Type this in ULauncher to search history.",
+      "default_value": "h"
+    }
+  ]
+}
